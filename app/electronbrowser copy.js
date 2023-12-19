@@ -82,20 +82,14 @@ function createNewTab() {
 
     const webviewHeader = document.createElement('div');
     webviewHeader.id = 'webview-header';
-    webviewHeader.classList.add('mdl-grid');
-    webviewHeader.classList.add('pihatu-grid');
+    webviewHeader.classList.add('mdl-grid pihatu-grid');
     // left arrow
     const leftArrowBox = document.createElement('div');
-    leftArrowBox.classList.add('mdl-cell');
-    leftArrowBox.classList.add('mdl-cell--1-col');
-    leftArrowBox.classList.add('button-size');
+    leftArrowBox.classList.add('mdl-cell mdl-cell--1-col button-size');
 
     const leftArrowButton = document.createElement('button');
     leftArrowButton.id = 'back';
-    leftArrowButton.classList.add('mdl-button');
-    leftArrowButton.classList.add('mdl-js-button');
-    leftArrowButton.classList.add('mdl-button--icon');
-    leftArrowButton.classList.add('mdl-js-ripple-effect');
+    leftArrowButton.classList.add('mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect');
 
     const leftArrowIcon = document.createElement('i');
     leftArrowIcon.classList.add('material-icons');
@@ -107,15 +101,10 @@ function createNewTab() {
     // right arrow
     const rightArrowBox = document.createElement('div');
     rightArrowBox.id = 'forward';
-    rightArrowBox.classList.add('mdl-cell');
-    rightArrowBox.classList.add('mdl-cell--1-col');
-    rightArrowBox.classList.add('button-size');
+    rightArrowBox.classList.add('mdl-cell mdl-cell--1-col button-size');
 
     const rightArrowButton = document.createElement('button');
-    rightArrowButton.classList.add('mdl-button');
-    rightArrowButton.classList.add('mdl-js-button');
-    rightArrowButton.classList.add('mdl-button--icon');
-    rightArrowButton.classList.add('mdl-js-ripple-effect');
+    rightArrowButton.classList.add('mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect');
 
     const rightArrowIcon = document.createElement('i');
     rightArrowIcon.classList.add('material-icons');
@@ -127,15 +116,10 @@ function createNewTab() {
     // refresh button
     const refreshBox = document.createElement('div');
     refreshBox.id = 'refresh';
-    refreshBox.classList.add('mdl-cell');
-    refreshBox.classList.add('mdl-cell--1-col');
-    refreshBox.classList.add('button-size');
+    refreshBox.classList.add('mdl-cell mdl-cell--1-col button-size');
 
     const refreshButton = document.createElement('button');
-    refreshButton.classList.add('mdl-button');
-    refreshButton.classList.add('mdl-js-button');
-    refreshButton.classList.add('mdl-button--icon');
-    refreshButton.classList.add('mdl-js-ripple-effect');
+    refreshButton.classList.add('mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect');
 
     const refreshIcon = document.createElement('i');
     refreshIcon.classList.add('material-icons');
@@ -147,15 +131,10 @@ function createNewTab() {
     // home button
     const homeBox = document.createElement('div');
     homeBox.id = 'homes';
-    homeBox.classList.add('mdl-cell');
-    homeBox.classList.add('mdl-cell--1-col');
-    homeBox.classList.add('button-size');
+    homeBox.classList.add('mdl-cell mdl-cell--1-col button-size');
 
     const homeButton = document.createElement('button');
-    homeButton.classList.add('mdl-button');
-    homeButton.classList.add('mdl-js-button');
-    homeButton.classList.add('mdl-button--icon');
-    homeButton.classList.add('mdl-js-ripple-effect');
+    homeButton.classList.add('mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect');
 
     const homeIcon = document.createElement('i');
     homeIcon.classList.add('material-icons');
@@ -166,35 +145,22 @@ function createNewTab() {
 
     // input
     const inputBox = document.createElement('div');
-    inputBox.classList.add('mdl-cell');
-    inputBox.classList.add('mdl-cell--6-col');
-    inputBox.classList.add('omnibox-size');
+    inputBox.classList.add('mdl-cell mdl-cell--6-col omnibox-size');
     
     const inputTag = document.createElement('input');
     inputTag.id = 'omnibox1';
     inputTag.classList.add('mdl-textfield__input');
     inputTag.type = 'text';
-    inputTag.value = 'http://www.google.com/'
-    inputTag.addEventListener('onkeyup', (e) => {
-        if (e.keycode === 13) {
-            newWebviewTag.src = inputTag.value;
-        }
-    });
 
     inputBox.appendChild(inputTag);
     
     // bookmark button
     const bookmarkBox = document.createElement('div');
     bookmarkBox.id = 'fave';
-    bookmarkBox.classList.add('mdl-cell');
-    bookmarkBox.classList.add('mdl-cell--1-col');
-    bookmarkBox.classList.add('button-size');
+    bookmarkBox.classList.add('mdl-cell mdl-cell--1-col button-size');
 
     const bookmarkButton = document.createElement('button');
-    bookmarkButton.classList.add('mdl-button');
-    bookmarkButton.classList.add('mdl-js-button');
-    bookmarkButton.classList.add('mdl-button--ico');
-    bookmarkButton.classList.add('mdl-js-ripple-effect');
+    bookmarkButton.classList.add('mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect');
 
     const bookmarkIcon = document.createElement('i');
     bookmarkIcon.classList.add('material-icons');
@@ -205,26 +171,18 @@ function createNewTab() {
 
     // other box
     const otherBox = document.createElement('div');
-    otherBox.classList.add('mdl-cell');
-    otherBox.classList.add('mdl-cell--1-col');
-    otherBox.classList.add('button-size');
+    otherBox.classList.add('mdl-cell mdl-cell--1-col button-size');
     
     const morevertButton = document.createElement('button');
     morevertButton.id = 'hdrbtn';
-    morevertButton.classList.add('mdl-button');
-    morevertButton.classList.add('mdl-js-button');
-    morevertButton.classList.add('mdl-js-ripple-effect');
-    morevertButton.classList.add('mdl-button--icon');
+    morevertButton.classList.add('mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon');
 
     const morevertIcon = document.createElement('i');
     morevertIcon.classList.add('material-icons');
     morevertIcon.textContent = 'more_vert';
 
     const ulBox = document.createElement('ul');
-    ulBox.classList.add('mdl-menu');
-    ulBox.classList.add('mdl-js-menu');
-    ulBox.classList.add('mdl-js-ripple-effect');
-    ulBox.classList.add('mdl-menu--bottom-right');
+    ulBox.classList.add('mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right');
     ulBox.for = 'hdrbtn';
 
     const devtoolButton = document.createElement('li');

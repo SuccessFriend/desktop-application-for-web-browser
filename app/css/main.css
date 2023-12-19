@@ -7,6 +7,11 @@ html, body {
     width: 100%;
 }
 
+#main {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 #omnibox1 {
     background-color: white;
     border-radius: 25px;
@@ -20,7 +25,7 @@ html, body {
     width: calc(100vw - 300px);
 }
 
-#mains {
+#webview-header {
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -43,5 +48,61 @@ webview {
     right:0;
     bottom:0;
     width:100%;
-    height:calc(100vh - 60px)
+    height:calc(100vh - 160px)
+}
+
+#tabs-bar {
+    display: flex;
+    background-color: #f1f1f1;
+    padding-left: 5px;
+}
+
+.tab {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: white;
+}
+
+#tabs-container {
+    display: flex;
+    background-color: #f1f1f1;
+    padding-left: 5px;
+}
+
+/* #newTab {
+    
+    margin-left: auto;
+} */
+
+#newTab {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.close-tab {
+    cursor: pointer;
+    padding-left: 10px;
+    color: #666;
+}
+
+.close-tab:hover {
+    color: #000;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.tab-content.active {
+    display: block;
 }

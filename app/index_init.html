@@ -14,17 +14,9 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        
-        <!-- <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header"> -->
-            <!-- <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-            </header> -->
-            <div id="tabs-container">
-                <div id="tabs-bar" class="tabs-bar"></div>
-                <button id="newTab" class="tabs-bar">+</button>
-            </div>
-
-            <!-- <main id="main" class="mdl-layout__content">
-                <div id="webview-header" class="mdl-grid pihatu-grid">
+        <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+                <div class="mdl-grid pihatu-grid">
                     <div class="mdl-cell mdl-cell--1-col button-size">
                         <button id="back" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
                             <i class="material-icons">keyboard_arrow_left</i>
@@ -64,16 +56,17 @@
                         </ul>
                     </div>
                 </div>
+            </header>
+
+            <main id="mains" class="mdl-layout__content">
                 <div id="views" class="page-content">
                     <webview id="view" class="page" src="https://www.google.com/" autosize="on"></webview>
                 </div>
-            </main> -->
-            
-            <div id="webviews"></div>
-        <!-- </div> -->
+            </main>
+        </div>
         <script src="js/material.min.js"></script>
         <script>
-            require('./electronbrowser.js')
+            require('./electronbrowser_init.js')
         </script>
     </body>
 </html>
